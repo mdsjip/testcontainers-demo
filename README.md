@@ -6,16 +6,14 @@ This repository is created to demonstrate Spring Boot project testing with Maven
 
 Make sure you completed all installation steps [here](https://docs.docker.com/engine/security/rootless/#install)
 
-Launch a successful Maven build with test-containers using host mvn command or Maven wrapper:
+Using host and Maven wrapper
 ```shell
-make success-mvn
-make success-mvnw
+make verify-with-mvnw
 ```
 
-Launch a failing build with inside Maven Docker image with Ryuk enabled/disabled:
+Using Maven image:
 ```shell
-make fail-maven-image-enabled-ryuk
-make fail-maven-image-disabled-ryuk
+make verify-with-maven-image
 ```
 
 ---
